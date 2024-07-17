@@ -14,39 +14,36 @@ function toggleTheme() {
   }
 }
 
-const postList = document.getElementById('postList'); 
+const postList = document.getElementById('postList');
 
 function displayPosts() {
-  
   const storedPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
 
-  
   postList.innerHTML = '';
 
-  
   storedPosts.forEach(post => {
     const listItem = document.createElement('li');
     listItem.innerHTML = `<h2>${post.title}</h2>
-                          <p>By: ${post.username}</p>`;
+                          <p>By: ${post.username}</p>
+                          <p>${post.content}</p>`;
     postList.appendChild(listItem);
   });
 }
-
 
 window.addEventListener('DOMContentLoaded', function() {
   displayPosts();
 });
 
-
 const backButton = document.getElementById('backButton');
+
 if (backButton) {
   backButton.addEventListener('click', function() {
     window.location.href = 'index.html';
   });
 }
 
-
 const developerPortfolioLink = document.getElementById('developerPortfolio');
+
 if (developerPortfolioLink) {
   developerPortfolioLink.addEventListener('click', function() {
     window.open('https://your-portfolio-link.com', '_blank');

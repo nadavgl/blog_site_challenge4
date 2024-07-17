@@ -6,10 +6,10 @@ document.getElementById('blogForm').addEventListener('submit', function(event) {
     const content = document.getElementById('content').value;
 
     const post = { username, title, content };
-    let posts = JSON.parse(localStorage.getItem('posts')) || [];
+    let posts = JSON.parse(localStorage.getItem('blogPosts')) || [];
     posts.push(post);
-    localStorage.setItem('posts', JSON.stringify(posts));
+    localStorage.setItem('blogPosts', JSON.stringify(posts));
 
+    // Redirect to the blog page after submitting the post
     window.location.href = 'blog.html';
 });
-
