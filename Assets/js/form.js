@@ -10,6 +10,5 @@ document.getElementById('blogForm').addEventListener('submit', function(event) {
     posts.push(post);
     localStorage.setItem('blogPosts', JSON.stringify(posts));
 
-    // Redirect to the blog page after submitting the post
     window.location.href = 'blog.html';
 });

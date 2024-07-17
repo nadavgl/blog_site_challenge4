@@ -21,7 +21,7 @@ function displayPosts() {
 
   postList.innerHTML = '';
 
-  storedPosts.forEach(post => {
+  storedPosts.forEach(function(post) {
     const listItem = document.createElement('li');
     listItem.innerHTML = `<h2>${post.title}</h2>
                           <p>By: ${post.username}</p>

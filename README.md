@@ -14,4 +14,10 @@ The website landing page has 3 form inputs
 
 When you hit submit you will be directed to a page that stores all of your blogs.
 
+![Screenshot1](./Assets/images/Screenshot%202024-07-17%20at%205.46.53 PM.png)
+![Screenshot2](./Assets/images/Screenshot%202024-07-17%20at%205.47.31 PM.png)
+
+## License
+This project is licensed under the MIT license.
+
 

@@ -1,12 +1,12 @@
-const contentSection = document.getElementById('main-content')
+const contentSection = document.getElementById('main-content');
 
-function displayPosts(posts){
-    contentSection.innerHTML = ' '
+function displayPosts(posts) {
+    contentSection.innerHTML = ' ';
     const postElement = document.createElement('div');
-    posts.forEach(post => {
+    
+    posts.forEach(function(post) {
         postElement.classList.add('blog-post');
-    }
+    });
 
-    ) 
-
+    contentSection.appendChild(postElement);
 }
